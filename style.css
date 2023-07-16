@@ -8,27 +8,115 @@ body{
 }
 
 h1{
+
     text-align: center;
 }
 
-.info-container{
-    border:2px solid rgb(80, 36, 202);
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
+input , label, textarea,select{
+
+    display: block;
+}
+
+fieldset{
+
+    border: none;
+}
+
+
+
+.legend-container{
+
+
+    border: 2px solid rgb(55, 0, 255);
+
+    display: flex;
+
+    flex-direction: row;
+    
+    width: 100%;
+
+    align-items: center;
+    gap:10px;
+   
+
+}
+
+.legend-number{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 2px solid red;
+    border-radius: 50%;
+    color: white;
+    background-color: #62CE82;
+    font-size: 25px;
     
 }
 
-.number{
-    border: 2px solid red;
-    padding:1%;
-    margin:2%;
-    color: #FFF;
-    background-color: green;
-    border-radius: 20px ;
+.user-input{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    
+    align-items: flex-start;
+    border:2px solid green;
+}
 
+.user-input input{
+    height:25px;
+    width: 90%;
+    border: none;
+    background-color:#E8EDF0 ;
+}
+
+
+.age-container{
+    display:flex;
+    border:2px solid purple;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 7px;
+ 
+}
+
+
+.age-item{
+
+    border:2px solid red;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.bio-container{
+    display:flex;
+    flex-direction: column;
+    gap:7px;
 
 }
-.age-label{
-    display:block;
+
+.bio-item{
+    border:none;
+    background-color: #E8EDF0;
+    height:60px;
+    width:90%;
+}
+
+.job-role-container{
+    display:flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap:7px;
+}
+
+.job-selector{
+    display:flex;
+    border:none;
+    background-color: #E8EDF0;
+    color:#94999C ;
+    height:25px;
+    width:90%;
 }
